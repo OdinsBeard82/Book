@@ -1,78 +1,32 @@
-.dropdown {
-  position: relative;
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  z-index: 1;
-  background-color: #fff;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,.2);
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #03293f;
-  color: aliceblue;
-  border-color: black;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(58, 88, 109);
 }
 
 .container {
   display: flex;
   background-color: black;
 }
-
-button {
-  background-color: #f60101;
-  font-size: 18px;
-  padding: 10px;
-  margin: 5px;
-}
-
-.book-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .book-title-container {
   display: flex;
   align-items: center;
-}
-
-.book-title {
   margin: 0;
   font-size: 24px;
   font-weight: bold;
+  width: 500px;
+  height:100px;
+  border-style: groove;
+  padding: 8px 12px;
 }
-
-.book-interview , 
-.book-memnoch ,
-.book-lestat ,
-.book-armand {
-  background-color: #f60101;
-  margin: 10px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,.2);
+.name {
+padding: 8px;
 }
-
 
 .read-button {
-  background-color: #f9f4f4;
+  background-color: #f49301;
   color: f61e01;
   border: none;
   border-radius: 5px;
@@ -80,10 +34,36 @@ button {
   padding: 8px 12px;
   margin-right: 10px;
   cursor: pointer;
+  border-style: groove;
 }
 
 .not-read-button {
-  background-color: #f9f4f4;
+  background-color: #f49301;
+  color: f61e01;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-style: groove;
+}
+
+.read-button:hover, .not-read-button:hover {
+  opacity: 0.8;
+}
+
+.read-button.selected, .not-read-button.selected {
+  background-color: #f61e01;
+  color: #fff;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.dropbtn {
+  background-color: #f49301;
   color: f61e01;
   border: none;
   border-radius: 5px;
@@ -92,6 +72,22 @@ button {
   cursor: pointer;
 }
 
-.read-button:hover, .not-read-button:hover {
-  opacity: 0.8;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-style: groove;
+  padding: 8px 12px;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #f49301;
 }

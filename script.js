@@ -44,12 +44,6 @@ function addBookToLibrary(title, author, pages) {
   myLibrary.push(newBook);
 }
 
-addBookToLibrary('Interview with a Vampire', 'Anne Rice', '371');
-addBookToLibrary('The Vampire Lestat', 'Anne Rice', '560');
-addBookToLibrary('The Vampire Armand', 'Anne Rice', '387');
-addBookToLibrary('Memnoch the Devil', 'Anne Rice', '354',);
-
-
 const array = []
 array.forEach(function (item, index)  {
   console.log(item, index);

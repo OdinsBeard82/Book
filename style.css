@@ -4,30 +4,33 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(58, 88, 109);
-}
-
-.container {
+  }
+  
+  .container {
   display: flex;
   background-color: black;
-}
-.book-title-container {
+  }
+  
+  .book-title-container {
   display: flex;
   align-items: center;
   margin: 0;
   font-size: 24px;
   font-weight: bold;
   width: 500px;
-  height:100px;
+  height: 100px;
   border-style: groove;
   padding: 8px 12px;
-}
-.name {
-padding: 8px;
-}
-
-.read-button {
+  }
+  
+  .name {
+  padding: 8px;
+  }
+  
+  .read-button,
+  .not-read-button {
   background-color: #f49301;
-  color: f61e01;
+  color: #f61e01;
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -35,44 +38,40 @@ padding: 8px;
   margin-right: 10px;
   cursor: pointer;
   border-style: groove;
-}
-
-.not-read-button {
-  background-color: #f49301;
-  color: f61e01;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  padding: 8px 12px;
-  cursor: pointer;
-  border-style: groove;
-}
-
-.read-button:hover, .not-read-button:hover {
+  }
+  
+  .not-read-button {
+  margin-right: 0;
+  }
+  
+  .read-button:hover,
+  .not-read-button:hover {
   opacity: 0.8;
-}
-
-.read-button.selected, .not-read-button.selected {
+  }
+  
+  .read-button.selected,
+  .not-read-button.selected {
   background-color: #f61e01;
   color: #fff;
-}
-.dropdown {
+  }
+  
+  .dropdown {
   position: relative;
   display: inline-block;
   margin: 20px;
-}
-
-.dropbtn {
+  }
+  
+  .dropbtn {
   background-color: #f49301;
-  color: f61e01;
+  color: #f61e01;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   padding: 8px 12px;
   cursor: pointer;
-}
-
-.dropdown-content {
+  }
+  
+  .dropdown-content {
   display: none;
   position: absolute;
   z-index: 1;
@@ -81,14 +80,23 @@ padding: 8px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   border-style: groove;
   padding: 8px 12px;
-
-}
-
-.dropdown:hover .dropdown-content {
+  }
+  
+  .dropdown:hover .dropdown-content {
   display: block;
-}
-
-.dropdown:hover .dropbtn {
+  }
+  
+  .dropdown:hover .dropbtn {
   background-color: #f49301;
-}
+  }
+
+  .NBook {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 8px 12px;
+  }
 

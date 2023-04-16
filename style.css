@@ -5,98 +5,66 @@ body {
   align-items: center;
   background-color: rgb(58, 88, 109);
   }
-  
-  .container {
-  display: flex;
-  background-color: black;
+
+
+  table {
+    margin: auto;
+    width: 100px;
+    border-collapse: collapse;
   }
-  
-  .book-title-container {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  font-size: 24px;
-  font-weight: bold;
-  width: 500px;
-  height: 100px;
-  border-style: groove;
-  padding: 8px 12px;
+
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid black;
   }
-  
-  .name {
-  padding: 8px;
+
+  th { 
+    background-color: #f49301;
   }
-  
-  .read-button,
-  .not-read-button {
-  background-color: #f49301;
-  color: #f61e01;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  padding: 8px 12px;
-  margin-right: 10px;
-  cursor: pointer;
-  border-style: groove;
+
+  tr:hover {
+    background-color: #f61e01;
   }
-  
-  .not-read-button {
-  margin-right: 0;
+
+  form {
+    padding: 50px;
   }
-  
-  .read-button:hover,
-  .not-read-button:hover {
-  opacity: 0.8;
-  }
-  
-  .read-button.selected,
-  .not-read-button.selected {
-  background-color: #f61e01;
-  color: #fff;
-  }
-  
-  .dropdown {
-  position: relative;
-  display: inline-block;
-  margin: 20px;
-  }
-  
-  .dropbtn {
-  background-color: #f49301;
-  color: #f61e01;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  padding: 8px 12px;
-  cursor: pointer;
-  }
-  
-  .dropdown-content {
-  display: none;
-  position: absolute;
-  z-index: 1;
-  background-color: #f9f9f9;
-  min-width: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  border-style: groove;
-  padding: 8px 12px;
-  }
-  
-  .dropdown:hover .dropdown-content {
-  display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
-  background-color: #f49301;
+
+ .submit {
+   background-color: #f49301;
+   padding: 10px;
+
   }
 
   .NBook {
     text-align: center;
-    margin: auto;
-    display: flex;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    padding: 8px 12px;
+    font-size: larger;
   }
 
+  .remove-button {
+    background-color: #f49301;
+  }
+  .yes-button,
+  .no-button {
+    padding: 8px 16px;
+    font-size: 8px;
+    color: black;
+    background-color: aliceblue;
+  }
+  .yes-button:hover {
+    background-color: #f49301;
+  }
+  .no-button:hover {
+    background-color: #f49301;
+  }
+ 
+  .yes-button.button-selected {
+    background-color: orange;
+  }
+
+  .no-button.button-selected {
+    background-color: #f49301;
+  }
+ 

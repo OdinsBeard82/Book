@@ -54,24 +54,25 @@ function addToTable(book) {
   removeCell.appendChild(removeButton);
 
   let yesButton = document.createElement("button");
-  yesButton.textContent = "yes";
-  yesButton.classList.add("yes-button");
-  yesButton.addEventListener('click', () => {
-    yesButton.classList.add('button-selected');
-  });
-  
+yesButton.textContent = "yes";
+yesButton.classList.add("yes-button");
+yesButton.addEventListener('click', () => {
+  yesButton.classList.add('button-selected');
+  noButton.classList.remove('button-selected');
+});
 
+readCell.appendChild(yesButton);
 
-  readCell.appendChild(yesButton);
- 
+let noButton = document.createElement("button");
+noButton.textContent = "no";
+noButton.classList.add("no-button");
+noButton.addEventListener('click', () => {
+  noButton.classList.add('button-selected');
+  yesButton.classList.remove('button-selected');
+});
 
-  let noButton = document.createElement("button");
-  noButton.textContent = "no";
-  noButton.classList.add("no-button");
-  noButton.addEventListener('click', () => 
-  noButton.classList.add('button-selected'))
+readCell.appendChild(noButton);
 
-  readCell.appendChild(noButton);
 }
 addToTable(book1);
 addToTable(book2);

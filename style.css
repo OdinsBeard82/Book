@@ -4,67 +4,96 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(58, 88, 109);
-  }
+  font-family: "Times New Roman", Times, serif;
+}
+
+table {
+  margin: auto;
+  width: 100%;
+  max-width: 400px; 
+  border-collapse: collapse;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+  background-color: rgb(58, 88, 109);
+  border-radius: 10px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #e0e0e0; 
+}
+
+th {
+  background-color: #f49301;
+  color: white;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f61e01;
+  transition: background-color 0.3s; 
+}
+
+form {
+  padding: 30px;
+  text-align: center;
+}
+
+.submit {
+  background-color: #f49301;
+  padding: 12px 24px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submit:hover {
+  background-color: #d58100;
+}
+
+.NBook {
+  text-align: center;
+  font-size: 24px; 
+  font-style: italic;
+  margin-top: 20px; 
+}
 
 
-  table {
-    margin: auto;
-    width: 100px;
-    border-collapse: collapse;
-  }
-
-  th,
-  td {
-    padding: 8px;
-    text-align: left;
-    border: 1px solid black;
-  }
-
-  th { 
-    background-color: #f49301;
-  }
-
-  tr:hover {
-    background-color: #f61e01;
-  }
-
-  form {
-    padding: 50px;
-  }
-
- .submit {
-   background-color: #f49301;
-   padding: 10px;
-
-  }
-
-  .NBook {
-    text-align: center;
-    font-size: larger;
-  }
-
-  .remove-button {
-    background-color: #f49301;
-  }
-  .yes-button,
-  .no-button {
-    padding: 8px 16px;
-    font-size: 8px;
-    color: black;
-    background-color: aliceblue;
-  }
-  .yes-button:hover {
-    background-color: #f49301;
-  }
-  .no-button:hover {
-    background-color: #f49301;
-  }
+.remove-button {
+  background-color: #f49301;
+  padding: 8px 16px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
  
-  .yes-button.button-selected {
-    background-color: orange;
-  }
+}
 
-  .no-button.button-selected {
-    background-color: #f49301;
-  }
- 
+.remove-button:hover {
+  background-color: #d58100;
+}
+
+.yes-button, .no-button {
+  padding: 12px 24px; 
+  font-size: 14px; 
+  color: rgb(3, 3, 3);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.yes-button:hover, .no-button:hover {
+  opacity: 0.8; 
+}
+
+.yes-button.button-selected {
+  background-color: orange;
+}
+
+.no-button.button-selected {
+  background-color: #f49301;
+}
